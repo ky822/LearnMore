@@ -1,0 +1,10 @@
+<order>
+  <purchaser name="Chris Chambers" id="CC230"/>
+  <shipping method="ground"/>
+  <item>
+    <itemid quantity="20" color="sapphire">13572</itemid>
+  </item>
+  <item>
+    <itemid quantity="3" size="3 feet">72400</itemid>
+  </item>
+</order>
