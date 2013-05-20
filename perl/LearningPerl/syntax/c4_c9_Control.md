@@ -52,7 +52,7 @@
 
 * foreach，针对列表
 
-		foreach $i (@list) {
+		foreach $i (@list) {		# 当省略$i时，可以使用$_代替
 			...
 		}
 		
