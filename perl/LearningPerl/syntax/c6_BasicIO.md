@@ -20,7 +20,7 @@
  		}
  *执行`perl test.pl a.txt b.txt c.txt`，此时程序将从a.txt, b.txt, c.txt三个文件中读取内容*
  		
-* 从ARGV数组中读取
+* 从ARGV数组中读取, 命令行赋予的参数，将保存到ARGC列表。
 
 		@ARGV = ('a.txt', 'b.txt', 'c.txt');		# <>将从ARGV数组所列的文件中读取内容
 		while (<>) {
