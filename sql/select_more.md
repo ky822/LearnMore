@@ -16,7 +16,7 @@
         [GROUP BY <字段> … 
         [HAVING <查找条件>]]
         [{UNIOIN | UNION ALL | INTERSECT | EXCEPT} <SELECT 语句>]
-        [ORDER BY <运算式> [ASC | DESC] … ]
+        [ORDER BY <字段> [ASC | DESC] … ]
             
     说明：
     
