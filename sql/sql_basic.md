@@ -90,3 +90,94 @@
 * 条件查询
 
         select <字段> from <数据表名称> where <查询条件>
+
+* * *
+
+# 根据语句分类来简单介绍各语句语法
+
+### 数据定义语言
+
+* 创建和删除数据库
+
+        CREATE DATABASE <数据库名称>
+        DROP DATABASE <数据库名称>
+
+* 创建和删除数据表
+
+        CREATE TABLE <数据表名称> (
+            <字段> <类型> [NOT NULL],
+            <字段> <类型> [NOT NULL],
+            ...
+        )
+        DROP TABLE <数据表名称>
+
+* 变更数据表结构，增加、修改、删除列（字段）
+
+        ALTER TABLE <数据表名称> {
+            ADD <字段> <类型> … |
+            ALTER <字段> <类型> … |
+            DROP <字段> ...
+        }
+
+* 创建视图
+
+        CREATE VIEW <视图名称> [<字段>, …] 
+            AS <SELECT 子句>
+        DROP VIEW <视图名称>
+
+* 创建索引，使数据搜索更快速
+
+        CREATE [UNIQUE] INDEX <索引名称>
+            ON <数据表名称> (<字段> [ASC | DESC] …)
+        DROP INDEX <索引名称>
+
+
+### 数据操作语言
+
+* INSERT 
+
+    * INSERT … VALUES …：指定记录的数据，然后插入
+    
+        语法如下：
+        
+            INSERT INTO <数据表名称>
+                (<字段1>, <字段2)
+            VALUES
+                (<值1>, <值2>, … )
+    
+    * INSERT … SELECT …：从其他数据表中取得记录，然后插入
+    
+        语法如下：
+        
+            INSERT INTO <数据表名称>
+                (<字段1>, <字段2)
+            SELECT <字段1>, <字段2>, …
+            FROM <数据表名称>
+            WHERE <查找条件>
+
+* UPDATE
+
+    语法如下：
+    
+        UPDATE <数据表名称> 
+        SET <字段1> = <值1>, …
+        WHERE <查找条件>
+
+* DELETE
+
+    语法如下：
+    
+        DELETE FROM <数据表名称>
+        WHERE <查找条件>
+
+
+### 数据控制语言
+
+* 交易管理
+
+    定义：对一连串的数据库进行处理，整合成一个作业单位来进行管理，成为交易。
+
+* 安全性管理
+
+        GRANT <权限> ON <数据表名称> TO {<使用者名称> | PUBLIC} [WITH GRANT OPTION]
+        REVOKE <权限> ON <数据表名称> FROM {<使用者名称> | PUBLIC}
