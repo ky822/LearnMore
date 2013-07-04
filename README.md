@@ -1,1 +1,4 @@
-### 这里主要记录了我的一些学习笔记和心得，此外在wiki里面也有有用的资料。
+位置 | 内容
+--- | ---
+LearnMore | 学习笔记、语法、例子、习题等
+[wiki](https://github.com/jyfeather/LearnMore/wiki) | 参考资料
